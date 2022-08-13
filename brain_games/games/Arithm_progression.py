@@ -20,7 +20,8 @@ def arithm_progression():
         index_of_random_number = progression.index(random_number)
         progression[index_of_random_number] = '..'
         answer = random_number
-        user_answer = int(prompt.string(f'Question: {progression} '))
+        my_string = " ".join(map(str, progression))
+        user_answer = int(prompt.string(f'Question: {my_string} '))
         if user_answer == answer:
             print(f'Your answer: {user_answer}')
             print('Correct!')
