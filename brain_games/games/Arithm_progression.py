@@ -18,7 +18,7 @@ def arithm_progression():
             progression.append(element)
         random_number = random.choice(progression)
         index_of_random_number = progression.index(random_number)
-        progression[index_of_random_number] = '...'
+        progression[index_of_random_number] = '..'
         answer = random_number
         user_answer = int(prompt.string(f'Question: {progression} '))
         if user_answer == answer:
