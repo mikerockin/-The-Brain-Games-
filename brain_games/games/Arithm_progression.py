@@ -1,15 +1,14 @@
 #!/usr/bin/env python3
 import random
 import prompt
+from brain_games.Engine import engine, AMOUNT_OF_STEPS
 
 
 def arithm_progression():
     count = 0
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print(f'Hello {name}!')
+    name = engine()
     print('What number is missing in the progression?')
-    while count != 3:
+    while count != AMOUNT_OF_STEPS:
         progression = []
         amount_of_elements = random.randint(5, 10)
         element = random.randint(1, 34)
@@ -26,7 +25,7 @@ def arithm_progression():
             print(f'Your answer: {user_answer}')
             print('Correct!')
             count += 1
-            if count == 3:
+            if count == AMOUNT_OF_STEPS:
                 print(f'Congratulations, {name}!')
         else:
             print(f'Your answer: {user_answer}')
