@@ -11,6 +11,7 @@ build/
 .idea
 develop-eggs/
 dist/
+brain_games/__pycache__/
 downloads/
 eggs/
 .eggs/
