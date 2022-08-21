@@ -2,16 +2,19 @@
 import random
 import prompt
 from brain_games.Engine import engine, AMOUNT_OF_STEPS
+START_OF_RANGE_RAND_NUMBER_1 = 1
+END_OF_RANGE_RAND_NUMBER_1 = 5
+START_OF_RANGE_RAND_NUMBER_2 = 1
+END_OF_RANGE_RAND_NUMBER_2 = 5
 
-
-def brain_calc():
+def performing_operations_on_numbers():
     count = 0
     name = engine()
     print('What is the result of the expression?')
     while count != AMOUNT_OF_STEPS:
         answer = ''
-        rand_number_1 = random.randint(1, 5)
-        rand_number_2 = random.randint(1, 5)
+        rand_number_1 = random.randint(START_OF_RANGE_RAND_NUMBER_1, END_OF_RANGE_RAND_NUMBER_1)
+        rand_number_2 = random.randint(START_OF_RANGE_RAND_NUMBER_2, START_OF_RANGE_RAND_NUMBER_2)
         operators = ('+', '-', '*')
         operator = random.choice(operators)
         if operator == '+':

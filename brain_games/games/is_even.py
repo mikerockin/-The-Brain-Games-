@@ -2,6 +2,8 @@
 import random
 import prompt
 from brain_games.Engine import engine, AMOUNT_OF_STEPS
+START_OF_RANGE_RAND_NUMBER = 1
+END_OF_RANGE_RAND_NUMBER = 841
 
 
 def is_even():
@@ -9,7 +11,7 @@ def is_even():
     name = engine()
     print('Answer "yes" if the number is even, otherwise answer "no".')
     while count != AMOUNT_OF_STEPS:
-        rand_number = random.randint(1, 841)
+        rand_number = random.randint(START_OF_RANGE_RAND_NUMBER, END_OF_RANGE_RAND_NUMBER)
         answer = ''
         if rand_number % 2 == 0:
             answer = 'yes'

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from brain_games.games.Arithm_progression import arithm_progression
+from brain_games.games.arithm_progression import arithm_progression
 
 
 def main():
