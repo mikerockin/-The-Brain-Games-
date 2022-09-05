@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 import random
-import math
 import prompt
 from brain_games.Engine import engine, AMOUNT_OF_STEPS
 START_OF_RANGE_RAND_NUMBER = 1
