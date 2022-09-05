@@ -11,7 +11,8 @@ def is_even():
     name = engine()
     print('Answer "yes" if the number is even, otherwise answer "no".')
     while count != AMOUNT_OF_STEPS:
-        rand_number = random.randint(START_OF_RANGE_RAND_NUMBER, END_OF_RANGE_RAND_NUMBER)
+        rand_number = random.randint(START_OF_RANGE_RAND_NUMBER,
+                                     END_OF_RANGE_RAND_NUMBER)
         answer = ''
         if rand_number % 2 == 0:
             answer = 'yes'
