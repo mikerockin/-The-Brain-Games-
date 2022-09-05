@@ -18,14 +18,9 @@ def performing_operations_on_numbers():
                                        END_OF_RANGE_RAND_NUMBER_1)
         rand_number_2 = random.randint(START_OF_RANGE_RAND_NUMBER_2,
                                        START_OF_RANGE_RAND_NUMBER_2)
-        operators = ('+', '-', '*')
+        operators = ['+', '-', '*']
         operator = random.choice(operators)
-        if operator == '+':
-            answer = rand_number_1 + rand_number_2
-        elif operator == '-':
-            answer = rand_number_1 - rand_number_2
-        elif operator == '*':
-            answer = rand_number_1 * rand_number_2
+        answer = eval(str(rand_number_1) + operator + str(rand_number_2))
         user_answer = int(prompt.string(f'Question: {rand_number_1} '
                                         f'{operator} {rand_number_2} '))
         if user_answer == answer:
