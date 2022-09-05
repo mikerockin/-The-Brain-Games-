@@ -7,14 +7,13 @@ START_OF_RANGE_RAND_NUMBER = 1
 END_OF_RANGE_RAND_NUMBER = 200
 DEVIDER = 2
 
+
 def is_prime(n):
     DEVIDER = 2
-    while n % DEVIDER != 0:
+    while DEVIDER * DEVIDER <= n and n % DEVIDER != 0:
         DEVIDER += 1
-    if DEVIDER == math.sqrt(n):
-        return False
-    else:
-        return True
+    return DEVIDER * DEVIDER > n
+
 
 def ask_user_is_prime():
     count = 0
