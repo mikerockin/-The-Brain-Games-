@@ -9,15 +9,18 @@ END_OF_RANGE_ELEMENTS = 34
 START_OF_RANGE_STEP_PROGRESSION = 2
 END_OF_RANGE_STEP_PROGRESSION = 2
 
+
 def calculates_arithm_progression():
     count = 0
     name = engine()
     print('What number is missing in the progression?')
     while count != AMOUNT_OF_STEPS:
         progression = []
-        amount_of_elements = random.randint(START_OF_RANGE_AMOUNT_OF_ELEMENTS, END_OF_RANGE_AMOUNT_OF_ELEMENTS)
+        amount_of_elements = random.randint(START_OF_RANGE_AMOUNT_OF_ELEMENTS,
+                                            END_OF_RANGE_AMOUNT_OF_ELEMENTS)
         element = random.randint(START_OF_RANGE_ELEMENTS, END_OF_RANGE_ELEMENTS)
-        step_of_progression = random.randint(START_OF_RANGE_STEP_PROGRESSION, END_OF_RANGE_STEP_PROGRESSION)
+        step_of_progression = random.randint(START_OF_RANGE_STEP_PROGRESSION,
+                                             END_OF_RANGE_STEP_PROGRESSION)
         for i in range(amount_of_elements):
             element += step_of_progression
             progression.append(element)
