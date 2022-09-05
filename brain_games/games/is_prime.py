@@ -1,27 +1,32 @@
 #!/usr/bin/env python3
 import random
+import math
 import prompt
 from brain_games.Engine import engine, AMOUNT_OF_STEPS
 START_OF_RANGE_RAND_NUMBER = 1
 END_OF_RANGE_RAND_NUMBER = 200
+DEVIDER = 2
 
 def is_prime(n):
-    d = 2
-    while n % d != 0:
-        d += 1
-    if d == n:
-        return True
-    else:
+    DEVIDER = 2
+    while n % DEVIDER != 0:
+        DEVIDER += 1
+    if DEVIDER == math.sqrt(n):
         return False
-
+    else:
+        return True
 
 def ask_user_is_prime():
     count = 0
     name = engine()
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     while count != AMOUNT_OF_STEPS:
-        rand_number = random.randint(START_OF_RANGE_RAND_NUMBER, END_OF_RANGE_RAND_NUMBER)
-        answer = is_prime(rand_number)
+        rand_number = random.randint(START_OF_RANGE_RAND_NUMBER,
+                                     END_OF_RANGE_RAND_NUMBER)
+        if is_prime(rand_number) is True:
+            answer = 'yes'
+        else:
+            answer = 'no'
         user_answer = (prompt.string(f'Question: {rand_number} ')).lower()
         while user_answer != 'yes' or user_answer != 'no':
             break
