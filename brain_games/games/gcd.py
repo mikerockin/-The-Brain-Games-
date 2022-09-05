@@ -7,6 +7,7 @@ END_OF_RANGE_RAND_NUMBER_1 = 20
 START_OF_RANGE_RAND_NUMBER_2 = 20
 END_OF_RANGE_RAND_NUMBER_2 = 50
 
+
 def calculates_gcd(rand_number_1, rand_number_2):
     while rand_number_1 != 0 and rand_number_2 != 0:
         if rand_number_1 > rand_number_2:
@@ -21,8 +22,10 @@ def ask_user_gcd():
     name = engine()
     print('Find the greatest common divisor of given numbers.')
     while count != AMOUNT_OF_STEPS:
-        rand_number_1 = random.randint(START_OF_RANGE_RAND_NUMBER_1, END_OF_RANGE_RAND_NUMBER_1)
-        rand_number_2 = random.randint(START_OF_RANGE_RAND_NUMBER_2, END_OF_RANGE_RAND_NUMBER_2)
+        rand_number_1 = random.randint(START_OF_RANGE_RAND_NUMBER_1,
+                                       END_OF_RANGE_RAND_NUMBER_1)
+        rand_number_2 = random.randint(START_OF_RANGE_RAND_NUMBER_2,
+                                       END_OF_RANGE_RAND_NUMBER_2)
         user_answer = int(prompt.string(f'Question: {rand_number_1} '
                                         f'{rand_number_2} '))
         answer = calculates_gcd(rand_number_1, rand_number_2)
