@@ -3,7 +3,7 @@
 <a href="https://codeclimate.com/github/mikerockin/python-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/400b3120991f564ffe77/maintainability" /></a>
 #  "The Brain Games" #
 
-## 1.  Игра: "Проверка на чётность" ##
+## 1.  Игра: "Проверка на чётность." ##
 Пользователю показывается случайное число и ему нужно ответить yes, если число чётное, или no — если нечётное.
 
 Demo: https://asciinema.org/a/Nl6P4mTLq8WTZxPsl7LmUvTSa
