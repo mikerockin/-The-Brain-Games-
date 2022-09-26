@@ -27,7 +27,6 @@ def compares_answers(user_answer, answer, name, count):
         print(f'Your answer: {user_answer}')
         print('Correct!')
         count += 1
-        print(count)
         if count == AMOUNT_OF_STEPS:
             print(f'Congratulations, {name}!')
     else:
