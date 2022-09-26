@@ -47,7 +47,6 @@ def engine(Funcarg, param):
             rand_number = random.randint(START_OF_RANGE_RAND_NUMBER,
                                          END_OF_RANGE_RAND_NUMBER)
             answer = Funcarg(rand_number)
-            print(answer)
             user_answer = (prompt.string(f'Question: {rand_number} ')).lower()
             while user_answer != 'yes' or user_answer != 'no':
                 break
