@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 from brain_games.games.is_even import is_even
+from brain_games.Engine import engine
+NAME_OF_GAME = 'is_even'
 
 
 def main():
-    is_even()
+    engine(is_even, NAME_OF_GAME)
 
 
 if __name__ == '__main__':

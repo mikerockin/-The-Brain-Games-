@@ -1,32 +1,12 @@
 #!/usr/bin/env python3
-import random
-import prompt
-from brain_games.Engine import engine, AMOUNT_OF_STEPS
 START_OF_RANGE_RAND_NUMBER = 1
 END_OF_RANGE_RAND_NUMBER = 841
 
 
-def is_even():
-    count = 0
-    name = engine()
-    print('Answer "yes" if the number is even, otherwise answer "no".')
-    while count != AMOUNT_OF_STEPS:
-        rand_number = random.randint(START_OF_RANGE_RAND_NUMBER,
-                                     END_OF_RANGE_RAND_NUMBER)
-        answer = ''
-        if rand_number % 2 == 0:
-            answer = 'yes'
-        else:
-            answer = 'no'
-        user_answer = (prompt.string(f'Question: {rand_number} ')).lower()
-        while user_answer != 'yes' or user_answer != 'no':
-            break
-        if answer == user_answer:
-            print('Correct!')
-            count += 1
-            if count == AMOUNT_OF_STEPS:
-                print(f'Congratulations, {name}!')
-        else:
-            print(f"'{user_answer}' is wrong answer ;(. "
-                  f"Correct answer was '{answer}'. Let's try again, {name}!")
-            break
+def is_even(param_1):
+    rand_number = param_1
+    if rand_number % 2 == 0:
+        answer = 'yes'
+    else:
+        answer = 'no'
+    return answer
