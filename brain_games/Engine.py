@@ -50,6 +50,7 @@ def engine(Funcarg, param):
             while user_answer != 'yes' or user_answer != 'no':
                 break
             count = compares_answers(user_answer, answer, name, count)
+            break
     elif param == 'calc':
         print('What is the result of the expression?')
         while count != AMOUNT_OF_STEPS:
