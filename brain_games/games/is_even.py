@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 START_OF_RANGE_RAND_NUMBER = 1
 END_OF_RANGE_RAND_NUMBER = 841
 

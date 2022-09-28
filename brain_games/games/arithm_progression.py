@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import random
 
 START_OF_RANGE_AMOUNT_OF_ELEMENTS = 5
