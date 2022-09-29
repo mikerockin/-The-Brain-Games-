@@ -9,7 +9,9 @@ END_OF_RANGE_STEP_PROGRESSION = 9
 
 
 def calculates_arithm_progression(amount_of_elements, element,
-                                  step_of_progression, progression):
+                                  step_of_progression, progression, count):
+    if count == 0:
+        print('What number is missing in the progression?')
     for i in range(amount_of_elements):
         element += step_of_progression
         progression.append(element)
