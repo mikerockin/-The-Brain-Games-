@@ -16,10 +16,10 @@ def is_prime(count):
     DEVIDER = 2
     while DEVIDER * DEVIDER <= rand_number and rand_number % DEVIDER != 0:
         DEVIDER += 1
-    if DEVIDER * DEVIDER > rand_number is True:
+    if DEVIDER * DEVIDER > rand_number:
         answer = 'yes'
     else:
         answer = 'no'
+    print(answer)
     user_answer = (prompt.string(f'Question: {rand_number} ')).lower()
-
     return answer, user_answer
