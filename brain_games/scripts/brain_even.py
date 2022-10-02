@@ -4,7 +4,8 @@ from brain_games.engine import engine
 
 
 def main():
-    engine(even, 'Answer "yes" if the number is even, otherwise answer "no".')
+    engine(even,
+           'Answer "yes" if the number is even, otherwise answer "no".')
 
 
 if __name__ == '__main__':
