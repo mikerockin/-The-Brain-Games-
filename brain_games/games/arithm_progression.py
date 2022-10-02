@@ -10,9 +10,7 @@ START_OF_RANGE_STEP_PROGRESSION = 2
 END_OF_RANGE_STEP_PROGRESSION = 9
 
 
-def calculates_arithm_progression(count):
-    if count == 0:
-        print('What number is missing in the progression?')
+def calculates_arithm_progression():
     progression = []
     amount_of_elements = \
         random.randint(START_OF_RANGE_AMOUNT_OF_ELEMENTS,

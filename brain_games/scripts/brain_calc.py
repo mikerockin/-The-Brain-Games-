@@ -4,7 +4,8 @@ from brain_games.engine import engine
 
 
 def main():
-    engine(performing_operations_on_numbers)
+    engine(performing_operations_on_numbers,
+           'What is the result of the expression?')
 
 
 if __name__ == '__main__':

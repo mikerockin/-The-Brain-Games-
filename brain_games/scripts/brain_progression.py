@@ -4,7 +4,8 @@ from brain_games.engine import engine
 
 
 def main():
-    engine(calculates_arithm_progression)
+    engine(calculates_arithm_progression,
+           'What number is missing in the progression?')
 
 
 if __name__ == '__main__':

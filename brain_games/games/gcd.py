@@ -8,9 +8,7 @@ GCD_START_OF_RANGE_RAND_NUMBER_2 = 20
 GCD_END_OF_RANGE_RAND_NUMBER_2 = 50
 
 
-def calculates_gcd(count):
-    if count == 0:
-        print('Find the greatest common divisor of given numbers.')
+def calculates_gcd():
     rand_number_1 = random.randint(GCD_START_OF_RANGE_RAND_NUMBER_1,
                                    GCD_END_OF_RANGE_RAND_NUMBER_1)
     rand_number_2 = random.randint(GCD_START_OF_RANGE_RAND_NUMBER_2,
