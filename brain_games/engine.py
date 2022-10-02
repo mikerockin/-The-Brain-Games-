@@ -8,7 +8,7 @@ def engine(generate_round, rules_of_game):
     count = 0
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
-    print(f'Hello {name}!')
+    print(f'Hello, {name}!')
     print(rules_of_game)
     while count != AMOUNT_OF_STEPS:
         answer, user_answer = generate_round()
