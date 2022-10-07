@@ -18,4 +18,5 @@ def calculates_gcd():
             rand_number_1 = rand_number_1 % rand_number_2
         else:
             rand_number_2 = rand_number_2 % rand_number_1
-    return question, str(rand_number_1 + rand_number_2)
+    answer = rand_number_1 + rand_number_2
+    return question, str(answer)
