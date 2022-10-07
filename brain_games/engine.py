@@ -1,6 +1,5 @@
 import prompt
 
-
 AMOUNT_OF_STEPS = 3
 
 
@@ -11,9 +10,10 @@ def engine(generate_round, rules_of_game):
     print(f'Hello, {name}!')
     print(rules_of_game)
     while count != AMOUNT_OF_STEPS:
-        answer, user_answer = generate_round()
+        question, answer = generate_round()
+        print(f'Question: {question}')
+        user_answer = prompt.string('Your answer: ').lower()
         if user_answer == answer:
-            print(f'Your answer: {user_answer}')
             print('Correct!')
             count += 1
         else:

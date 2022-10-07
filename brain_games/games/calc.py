@@ -1,11 +1,11 @@
 import random
-import prompt
 
 
 START_OF_RANGE_RAND_NUMBER_1 = 1
 END_OF_RANGE_RAND_NUMBER_1 = 10
 START_OF_RANGE_RAND_NUMBER_2 = 1
 END_OF_RANGE_RAND_NUMBER_2 = 10
+RULES_OF_GAME = 'What is the result of the expression?'
 
 
 def performing_operations_on_numbers():
@@ -21,6 +21,5 @@ def performing_operations_on_numbers():
         answer = rand_number_1 - rand_number_2
     else:
         answer = rand_number_1 * rand_number_2
-    user_answer = int(prompt.string(f'Question: {rand_number_1} '
-                                    f''f'{operator} {rand_number_2} '))
-    return answer, user_answer
+    question = f'{rand_number_1} {operator} {rand_number_2}'
+    return question, str(answer)

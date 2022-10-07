@@ -1,10 +1,11 @@
 import random
-import prompt
 
 
 PRIME_START_OF_RANGE_RAND_NUMBER = 1
 PRIME_END_OF_RANGE_RAND_NUMBER = 200
 DEVIDER = 2
+RULES_OF_GAME = 'Answer "yes" if given number'' is prime.' \
+                ' Otherwise answer "no".'
 
 
 def is_prime(rand_number):
@@ -21,5 +22,4 @@ def prime():
         answer = 'yes'
     else:
         answer = 'no'
-    user_answer = (prompt.string(f'Question: {rand_number} ')).lower()
-    return answer, user_answer
+    return rand_number, answer

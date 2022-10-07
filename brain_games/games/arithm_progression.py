@@ -1,6 +1,4 @@
 import random
-import prompt
-
 
 START_OF_RANGE_AMOUNT_OF_ELEMENTS = 5
 END_OF_RANGE_AMOUNT_OF_ELEMENTS = 10
@@ -8,6 +6,7 @@ START_OF_RANGE_ELEMENTS = 1
 END_OF_RANGE_ELEMENTS = 34
 START_OF_RANGE_STEP_PROGRESSION = 2
 END_OF_RANGE_STEP_PROGRESSION = 9
+RULES_OF_GAME = 'What number is missing in the progression?'
 
 
 def calculates_arithm_progression():
@@ -27,5 +26,4 @@ def calculates_arithm_progression():
     index_of_random_number = progression.index(random_number)
     progression[index_of_random_number] = '..'
     my_string = " ".join(map(str, progression))
-    user_answer = int(prompt.string(f'Question: {my_string} '))
-    return random_number, user_answer
+    return my_string, str(random_number)

@@ -1,7 +1,8 @@
 import random
-import prompt
+
 START_OF_RANGE_RAND_NUMBER = 1
 END_OF_RANGE_RAND_NUMBER = 841
+RULES_OF_GAME = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def even():
@@ -11,5 +12,4 @@ def even():
         answer = 'yes'
     else:
         answer = 'no'
-    user_answer = (prompt.string(f'Question: {rand_number} ')).lower()
-    return answer, user_answer
+    return rand_number, answer
