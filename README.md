@@ -3,46 +3,71 @@
 <a href="https://codeclimate.com/github/mikerockin/python-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/400b3120991f564ffe77/maintainability" /></a>
 #  "The Brain Games" #
 
-### 1.  Игра: "Проверка на чётность." ##
-Пользователю показывается случайное число и ему нужно ответить yes, если число чётное, или no — если нечётное.
+### 1.  Game: "Evenness Check." ##
+The user is shown a random number and needs to answer yes if the number is even, or no if it is odd.
 
 Demo: https://asciinema.org/a/mnxohTWHVrZflCYWlmYwexnTR
  
-### 2.  Игра: "Калькулятор" ##
-Пользователю показывается случайное математическое выражение, например 35 + 16, которое нужно вычислить и записать правильный ответ.
+### 2.  Game: "Calculator" ##
+The user is shown a random mathematical expression, such as 35 + 16, which they must calculate and write down the correct answer..
 
 Demo: https://asciinema.org/a/MZDy61yK5M6eusHWNmSGwFVqR
 
-### 3.  Игра "НОД" ##
-Пользователю показывается два случайных числа, например, 25 50. Пользователь должен вычислить и ввести наибольший общий делитель этих чисел.
+### 3.  Game "Least common divisor" ##
+The user is shown two random numbers, for example 25 50. The user must calculate and enter the greatest common divisor of these numbers.
 
 Demo: https://asciinema.org/a/096dWTLL6ZTV2H9FJ8CicaF63
 
-### 4.  Игра "Арифметическая прогрессия" ##
-Игроку показывается ряд чисел, образующий арифметическую прогрессию, одно из чисел последовательности заменено двумя точками. Игрок должен определить это число.
+### 4.  Game "Arithmetic progression" ##
+The user is shown a series of numbers that form an arithmetic progression, one of the numbers in the sequence is replaced by two dots. The player must determine this number.
 
 Demo: https://asciinema.org/a/x07Q9qFbihjuRntjzczyAIgNC
 
-### 5.  Игра "Простое ли число?" ##
-Игроку показывается число, необходимо определить является ли число простым и дать ответ.
+### 5.  Game "Is it a prime number?" ##
+The user is shown a number and must determine whether the number is prime and give an answer.
 
  Demo: https://asciinema.org/a/ECeGKY2ptqHDhq0cU7kVuW7oh
 
-### Установка: ##
-Для установки пакета из операционной системы, используйте команду: 
-python3 -m pip install --user dist/hexlet_code-0.1.0-py3-none-any.whl
+### Installation: ##
 
-## Запуск: ##
+- The application container is available on Docker Hub under the name: mikerockin1988/my-brain-games
+
+  https://hub.docker.com/r/mikerockin1988/my-brain-games
+  
+      $ docker pull mikerockin1988/my-brain-games:1.0
+  **After pulling the image, you can run the container in one of 2 modes:
+  
+I. Interactive:
+
+      $ docker run -it --rm my-brain-games:1.0 sh
+  After launch use commands from "**Startup commands**"
+
+II. Launching a specific game:
+
+     $ docker run -it --rm my-brain-games:1.0 <Startup command>
+
+Example:
+
+     $ docker run -it --rm my-brain-games:1.0 brain-even
+     $ docker run -it --rm my-brain-games:1.0 brain-calc
+     .....
+          
+- The application container is available on Container Registry ( Yandex Cloud ), access to the Docker image for authorized Yandex Cloud users who are members of the organization**
+
+      $ docker pull cr.yandex/crpv85vhagh6a4tpo9mi/my-brain-games:1.0
+
+
+## Startup commands: ##
     
-    brain-even       - Игра: "Проверка на чётность." 
+    brain-even       - Game: "Evenness Check."
 
-    brain-calc       - Игра: "Калькулятор"
+    brain-calc       - Game: "Calculator"
 
-    brain-gcd        - Игра "НОД"
+    brain-gcd        - Game "Least common divisor"
 
-    brain-prog       - Игра "Арифметическая прогрессия"
+    brain-prog       - Game "Arithmetic progression"
 
-    brain-prime      - Игра "Простое ли число?"
+    brain-prime      - Game "Is it a prime number?"
 
 
 
